@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kontaktlista</title>
+</head>
+<body>
+    <div class="main-content">
+        <h1>Your contacts</h1>
+            <hr>
+        <section id="createContact">
+            <label>Namn:</label>
+            <input 
+            placeholder = "Ex: Robin Raczkiewicz"
+            type="text" 
+            id="contactName">
+            
+            <label>Telefon:</label>
+            <input 
+            placeholder = "Ex: xxx-xxx-xx-xx" 
+            type="text" 
+            id="contactNumber">
+            
+            <input 
+            type="submit"
+            value="Skapa"
+            class="saveButton" 
+            onclick="getContact()">
+
+            <input 
+            type="submit"
+            value="Radera Lista" 
+            class="deleteListButton" 
+            onclick="deleteList()">
+        </section>
+        <section>
+            <h3>Mina kontakter</h3>
+
+            <div>
+                <ul id="contactsList">
+
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+    <script src="/Robin Raczkiewicz - contact lista/script.js"></script>
+</body>
+</html>
